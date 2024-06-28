@@ -12,6 +12,14 @@
             name = "devenv";
             paths = with pkgs; [
                 yazi
+                zsh
+                neovim
+                tmux
+                lua
+                nodejs_22
+                go
+                fd
+                google-cloud-sdk
             ];
         };
 
