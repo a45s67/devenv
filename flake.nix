@@ -19,6 +19,7 @@
                 nodejs_22
                 go
                 fd
+                rustup
                 google-cloud-sdk
             ];
         };
