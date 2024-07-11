@@ -21,6 +21,7 @@
                 fd
                 rustup
                 google-cloud-sdk
+                helix
             ];
         };
 
