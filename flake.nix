@@ -1,14 +1,18 @@
 {
     inputs = {
         nixpkgs.url = "github:nixOS/nixpkgs?ref=24.05";
+        flake-utils.url = "github:numtide/flake-utils";
     };
 
-    outputs = {self, nixpkgs}:
-# supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
-    {
-        packages."aarch64-darwin".default = let
-            pkgs = nixpkgs.legacyPackages."aarch64-darwin";
-        in pkgs.buildEnv {
+    
+    # Reference: [flakes template - ruby](https://github.com/NixOS/templates/blob/master/ruby/flake.nix)
+    outputs = {self, nixpkgs, flake-utils}:
+    flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+      in {
+        defaultPackage = with pkgs;
+        buildEnv {
             name = "devenv";
             paths = with pkgs; [
                 yazi
@@ -24,6 +28,5 @@
                 helix
             ];
         };
-
-    };
+      });
 }
