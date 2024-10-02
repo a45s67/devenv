@@ -15,6 +15,7 @@
         buildEnv {
             name = "devenv";
             paths = with pkgs; [
+                openvpn
                 yazi
                 zsh
                 neovim
