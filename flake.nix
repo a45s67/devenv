@@ -24,6 +24,7 @@
                 nodejs_22
                 go
                 fd
+                tree
                 rustup
                 google-cloud-sdk
                 helix
