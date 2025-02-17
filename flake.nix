@@ -28,6 +28,7 @@
                 rustup
                 google-cloud-sdk
                 helix
+                nmap
             ];
         };
       });
