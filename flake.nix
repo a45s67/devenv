@@ -29,6 +29,7 @@
                 google-cloud-sdk
                 helix
                 nmap
+                uv
             ];
         };
       });
