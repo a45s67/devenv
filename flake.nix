@@ -16,6 +16,8 @@
             name = "devenv";
             paths = with pkgs; [
                 openvpn
+                lazygit
+                lf
                 yazi
                 zsh
                 neovim
@@ -29,6 +31,9 @@
                 google-cloud-sdk
                 helix
                 nmap
+                rustscan
+                fzf
+                ripgrep
                 uv
             ];
         };
