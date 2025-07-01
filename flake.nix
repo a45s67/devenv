@@ -32,6 +32,7 @@
                 helix
                 nmap
                 rustscan
+                zoxide
                 fzf
                 ripgrep
                 uv
