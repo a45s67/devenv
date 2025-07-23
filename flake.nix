@@ -23,7 +23,7 @@
                 neovim
                 tmux
                 lua
-                nodejs_22
+                nodejs_24
                 go
                 fd
                 tree
