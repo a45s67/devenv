@@ -36,6 +36,7 @@
                 fzf
                 ripgrep
                 uv
+                chezmoi
             ];
         };
       });
