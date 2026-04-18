@@ -37,6 +37,9 @@
                 ripgrep
                 uv
                 chezmoi
+                delta
+                btop
+                glow
             ];
         };
       });
