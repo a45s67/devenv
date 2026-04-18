@@ -1,3 +1,4 @@
+Install nix with https://github.com/NixOS/nix-installer/tree/main
 ```
 # Update the flake.lock
 nix flake update
